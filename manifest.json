@@ -1,6 +1,19 @@
 {
-    "name": "Getting Started Example",
-    "description": "Build an Extension!",
+    "name": "bbb324's chrome-ext",
+    "description": "Build my own Extension!",
     "version": "1.0",
-    "manifest_version": 3
-  }
+    "manifest_version": 3,
+    "icons": {
+        "16": "image/icon.png",
+        "32": "image/icon.png",
+        "48": "image/icon.png",
+        "128": "image/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+      }
+}
